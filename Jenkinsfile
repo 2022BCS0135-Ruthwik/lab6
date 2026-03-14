@@ -87,7 +87,8 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'app/artifacts/**', allowEmptyArchive: false
+            archiveArtifacts artifacts: '**/app/artifacts/**', allowEmptyArchive: false
+
         }
     }
 }
